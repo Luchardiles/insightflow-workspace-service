@@ -111,7 +111,7 @@ http://localhost:5265
 
 ### Base URL (Producción)
 ```
-https://tu-servicio.onrender.com
+https://insightflow-workspace-service-ir2q.onrender.com/
 ```
 
 ### Endpoints
@@ -253,24 +253,3 @@ El servicio incluye datos de ejemplo que se cargan automáticamente al iniciar:
 1. **Proyecto Universidad** (Propietario: Juan Pérez)
 2. **Ideas Personales** (Propietario: Juan Pérez)
 3. **Desarrollo Web** (Propietario: María González)
-
----
-
-## 🧪 Testing
-
-### Probar con cURL
-
-```bash
-# Listar espacios de un usuario
-curl "http://localhost:5000/workspaces?userId=550e8400-e29b-41d4-a716-446655440001"
-
-# Obtener un espacio específico
-curl "http://localhost:5000/workspaces/{workspace-id}?userId=550e8400-e29b-41d4-a716-446655440001"
-```
-
-### Probar con Postman
-
-Importa la colección de Postman incluida en el repositorio: `workspace-service.postman_collection.json`
-
-
----
