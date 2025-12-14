@@ -24,4 +24,4 @@ EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
 
 # Comando para ejecutar la aplicación
-ENTRYPOINT ["dotnet", "WorkspaceService.dll"]
+ENTRYPOINT ["dotnet", "insightflow-workspace-service.dll"]
