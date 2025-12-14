@@ -1,0 +1,6 @@
+@insightflow_workspace_service_HostAddress = http://localhost:5265
+
+GET {{insightflow_workspace_service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
