@@ -18,10 +18,10 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 # Exponer el puerto que usará la aplicación
-EXPOSE 5265
+EXPOSE 8080
 
 # Variable de entorno para configurar la URL
-ENV ASPNETCORE_URLS=http://+:5265
+ENV ASPNETCORE_URLS=http://+:8080
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["dotnet", "WorkspaceService.dll"]
