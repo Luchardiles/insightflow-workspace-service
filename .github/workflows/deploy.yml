@@ -32,18 +32,5 @@ jobs:
           context: "{{defaultContext}}"
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/insightflow-workspace:latest
-            ${{ secrets.DOCKER_USERNAME }}/insightflow-workspace:${{ github.sha }}
-          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/insightflow-workspace:latest
-          cache-to: type=inline
-
-      # Paso 5: Notificar a Render para redesplegar el servicio
-      - name: Deploy to Render
-        run: |
-          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
-        
-      # Paso 6: Confirmación de despliegue exitoso
-      - name: Deployment successful
-        run: |
-          echo "✅ Imagen Docker publicada exitosamente en Docker Hub"
-          echo "✅ Servicio desplegado en Render"
+            ${{ secrets.DOCKER_USERNAME }}/insightflow-workspace-service:latest
+            ${{ secrets.DOCKER_USERNAME }}/insightflow-workspace-service:${{ github.sha }}
