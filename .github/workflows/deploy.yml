@@ -1,5 +1,4 @@
-name: CI/CD Pipeline - Workspace Service
-
+name: Build and Deploy Docker Image
 # Disparar el workflow en push a la rama main
 on:
   push:
